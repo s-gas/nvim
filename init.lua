@@ -63,11 +63,25 @@ require("lazy").setup({
     lazy = false,
     build = ":TSUpdate",
     config = function()
-      require("nvim-treesitter").install({ "go", "dockerfile", "yaml", "bash" })
+      require("nvim-treesitter").install({
+        "go",
+        "javascript",
+        "typescript",
+        "html",
+        "css",
+        "dockerfile",
+        "yaml",
+        "bash",
+      })
     end,
   },
   -- LSP
   { "neovim/nvim-lspconfig" },
+  -- Emmet
+  {
+    "mattn/emmet-vim",
+    ft = { "html", "css", "javascriptreact", "typescriptreact" },
+  },
 })
 
 -- TELESCOPE KEYMAPS
