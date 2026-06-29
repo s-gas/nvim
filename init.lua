@@ -99,4 +99,4 @@ vim.api.nvim_create_autocmd('FileType', {
 })
 
 -- LSP LANGUAGE SERVERS
-vim.lsp.enable({ 'gopls', 'bashls', 'dockerls', 'docker_compose_language_service' })
+vim.lsp.enable({ 'ts_ls', 'gopls', 'bashls', 'dockerls', 'docker_compose_language_service' })
